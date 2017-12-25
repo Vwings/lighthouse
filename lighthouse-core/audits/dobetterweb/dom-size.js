@@ -36,10 +36,10 @@ class DOMSize extends Audit {
       name: 'dom-size',
       description: '避免DOM元素过多',
       failureDescription: '使用DOM元素过多',
-      helpText: '浏览器工程师建议页面包含少于〜$ {Util.formatNumber（DOMSize.MAX_DOM_NODES）} 的DOM节点.' +
+      helpText: '浏览器工程师建议页面包含少于〜$ {Util.formatNumber(DOMSize.MAX_DOM_NODES)} 的DOM节点.' +
       '最佳位置是树的深度<$ {MAX_DOM_TREE_DEPTH}个元素，小于$ {MAX_DOM_TREE_WIDTH}个子元素/父元素.' +
-      '大的DOM会增加内存使用，导致更长的[样式计算]（https://developers.google.com/web/fundamentals/performance/rendering/reduce-the-scope-and-complexity-of-style-calculations）,' +
-      ' 并产生昂贵的[布局重排]（https://developers.google.com/speed/articles/reflow）。[了解更多](https://developers.google.com/web/fundamentals/performance/rendering/).',
+      '大的DOM会增加内存使用，导致更长的[样式计算](https://developers.google.com/web/fundamentals/performance/rendering/reduce-the-scope-and-complexity-of-style-calculations),' +
+      ' 并产生昂贵的[布局重排](https://developers.google.com/speed/articles/reflow)。[了解更多](https://developers.google.com/web/fundamentals/performance/rendering/).',
       scoringMode: Audit.SCORING_MODES.NUMERIC,
       requiredArtifacts: ['DOMStats'],
     };

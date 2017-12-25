@@ -21,8 +21,8 @@ class TotalByteWeight extends ByteEfficiencyAudit {
       name: 'total-byte-weight',
       description: '避免巨大的网络负载',
       failureDescription: '有巨大的网络负载',
-      helpText: '网络传输大小([用户真正的金钱成本]（https://whatdoesmysitecost.com/）与很长的加载时间[高度相关]（http://httparchive.org/interesting.php#onLoad）.' +
-          '尝试找到方法来减少所需文件的大小).',
+      helpText: '网络传输大小[用户真正的金钱成本](https://whatdoesmysitecost.com/)与很长的加载时间[高度相关](http://httparchive.org/interesting.php#onLoad).' +
+          '尝试找到方法来减少所需文件的大小.',
       scoringMode: ByteEfficiencyAudit.SCORING_MODES.NUMERIC,
       requiredArtifacts: ['devtoolsLogs'],
     };

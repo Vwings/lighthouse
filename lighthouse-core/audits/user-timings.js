@@ -16,7 +16,7 @@ class UserTimings extends Audit {
     return {
       name: 'user-timings',
       description: '用户计时标志和措施',
-      helpText: '考虑在您的应用中嵌入User Timing接口,以创建关键用户体验的自定义真实测量结果.[了解更多](https://developers.google.com/web/tools/lighthouse/audits/user-timing)。',
+      helpText: '考虑在您的应用中嵌入User Timing接口,以创建关键用户体验的自定义真实测量结果.[了解更多](https://developers.google.com/web/tools/lighthouse/audits/user-timing).',
       requiredArtifacts: ['traces'],
       informative: true,
     };

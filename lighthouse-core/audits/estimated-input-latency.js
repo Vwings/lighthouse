@@ -24,7 +24,7 @@ class EstimatedInputLatency extends Audit {
       description: '预计输入延迟时间',
       helpText: '以上分数是对您应用的用户输入响应时间的估算,以毫秒为单位.用户遇到这种延迟的概率为90％或更小.' +
       '有10%的概率用户会遇到额外的延迟.如果你的分数高于Lighthouse的目标分数，用户可能会认为你的应用程序是滞后的.' +
-      '[了解更多](https://developers.google.com/web/tools/lighthouse/audits/estimated-input-latency)。',
+      '[了解更多](https://developers.google.com/web/tools/lighthouse/audits/estimated-input-latency).',
       scoringMode: Audit.SCORING_MODES.NUMERIC,
       requiredArtifacts: ['traces'],
     };
