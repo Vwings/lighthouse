@@ -18,10 +18,9 @@ class BootupTime extends Audit {
     return {
       category: 'Performance',
       name: 'bootup-time',
-      description: 'JavaScript boot-up time is high (> 4s)',
-      failureDescription: 'JavaScript boot-up time is too high',
-      helpText: 'Consider reducing the time spent parsing, compiling and executing JS. ' +
-        'You may find delivering smaller JS payloads helps with this.',
+      description: 'JavaScript启动时间长（> 4s）',
+      failureDescription: 'JavaScript启动时间太高',
+      helpText: '考虑减少解析，编译和执行JS的时间。你会发现交付更小的JS有效载荷可能对此有帮助。',
       requiredArtifacts: ['traces'],
     };
   }

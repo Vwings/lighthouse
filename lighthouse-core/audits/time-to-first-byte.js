@@ -17,10 +17,9 @@ class TTFBMetric extends Audit {
   static get meta() {
     return {
       name: 'time-to-first-byte',
-      description: 'Keep server response times low (TTFB)',
+      description: '保持服务器低响应时间（TTFB）',
       informative: true,
-      helpText: 'Time To First Byte identifies the time at which your server sends a response.' +
-        ' [Learn more](https://developers.google.com/web/tools/chrome-devtools/network-performance/issues).',
+      helpText: '“第一个字节的时间”表示服务器发送一个响应的时间.[了解更多](https://developers.google.com/web/tools/chrome-devtools/network-performance/issues).',
       requiredArtifacts: ['devtoolsLogs', 'URL'],
     };
   }

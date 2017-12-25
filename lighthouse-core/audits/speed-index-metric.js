@@ -20,9 +20,8 @@ class SpeedIndexMetric extends Audit {
   static get meta() {
     return {
       name: 'speed-index-metric',
-      description: 'Perceptual Speed Index',
-      helpText: 'Speed Index shows how quickly the contents of a page are visibly populated. ' +
-          '[Learn more](https://developers.google.com/web/tools/lighthouse/audits/speed-index).',
+      description: '知觉速度指数',
+      helpText: '速度指数显示了页面内容的视觉填充速度. [了解更多](https://developers.google.com/web/tools/lighthouse/audits/speed-index).',
       scoringMode: Audit.SCORING_MODES.NUMERIC,
       requiredArtifacts: ['traces'],
     };

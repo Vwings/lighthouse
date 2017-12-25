@@ -15,10 +15,8 @@ class UserTimings extends Audit {
   static get meta() {
     return {
       name: 'user-timings',
-      description: 'User Timing marks and measures',
-      helpText: 'Consider instrumenting your app with the User Timing API to create custom, ' +
-          'real-world measurements of key user experiences. ' +
-          '[Learn more](https://developers.google.com/web/tools/lighthouse/audits/user-timing).',
+      description: '用户计时标志和措施',
+      helpText: '考虑在您的应用中嵌入User Timing接口,以创建关键用户体验的自定义真实测量结果.[了解更多](https://developers.google.com/web/tools/lighthouse/audits/user-timing)。',
       requiredArtifacts: ['traces'],
       informative: true,
     };

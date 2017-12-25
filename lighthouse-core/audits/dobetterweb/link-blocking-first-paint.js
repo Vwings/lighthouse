@@ -27,11 +27,9 @@ class LinkBlockingFirstPaintAudit extends Audit {
   static get meta() {
     return {
       name: 'link-blocking-first-paint',
-      description: 'Reduce render-blocking stylesheets',
+      description: '减少阻塞渲染的样式表',
       informative: true,
-      helpText: 'External stylesheets are blocking the first paint of your page. Consider ' +
-          'delivering critical CSS via `<style>` tags and deferring non-critical ' +
-          'styles. [Learn more](https://developers.google.com/web/tools/lighthouse/audits/blocking-resources).',
+      helpText: '外部样式表组织了页面的首次绘制.考虑通过`<style>`标签定义关键CSS，并推迟非关键样式.[了解更多](https://developers.google.com/web/tools/lighthouse/audits/blocking-resources).',
       requiredArtifacts: ['TagsBlockingFirstPaint', 'traces'],
     };
   }

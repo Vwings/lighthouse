@@ -21,8 +21,8 @@ class ScreenshotThumbnails extends Audit {
     return {
       name: 'screenshot-thumbnails',
       informative: true,
-      description: 'Screenshot Thumbnails',
-      helpText: 'This is what the load of your site looked like.',
+      description: '截图缩略图',
+      helpText: '这是您网站的外观.',
       requiredArtifacts: ['traces'],
     };
   }

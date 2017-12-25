@@ -27,11 +27,11 @@ class CacheHeaders extends ByteEfficiencyAudit {
     return {
       category: 'Caching',
       name: 'uses-long-cache-ttl',
-      description: 'Uses efficient cache policy on static assets',
-      failureDescription: 'Uses inefficient cache policy on static assets',
+      description: '在静态资源上使用高效的缓存策略',
+      failureDescription: '在静态资源上使用低效的缓存策略',
       helpText:
-        'A long cache lifetime can speed up repeat visits to your page. ' +
-        '[Learn more](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/http-caching#cache-control).',
+        '一个较长的缓存生命周期可以提高您页面重复访问的速度. ' +
+        '[了解更多](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/http-caching#cache-control).',
       scoringMode: ByteEfficiencyAudit.SCORING_MODES.NUMERIC,
       requiredArtifacts: ['devtoolsLogs'],
     };

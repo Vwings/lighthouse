@@ -34,14 +34,12 @@ class DOMSize extends Audit {
   static get meta() {
     return {
       name: 'dom-size',
-      description: 'Avoids an excessive DOM size',
-      failureDescription: 'Uses an excessive DOM size',
-      helpText: 'Browser engineers recommend pages contain fewer than ' +
-        `~${Util.formatNumber(DOMSize.MAX_DOM_NODES)} DOM nodes. The sweet spot is a tree ` +
-        `depth < ${MAX_DOM_TREE_DEPTH} elements and fewer than ${MAX_DOM_TREE_WIDTH} ` +
-        'children/parent element. A large DOM can increase memory usage, cause longer ' +
-        '[style calculations](https://developers.google.com/web/fundamentals/performance/rendering/reduce-the-scope-and-complexity-of-style-calculations), ' +
-        'and produce costly [layout reflows](https://developers.google.com/speed/articles/reflow). [Learn more](https://developers.google.com/web/fundamentals/performance/rendering/).',
+      description: '避免DOM元素过多',
+      failureDescription: '使用DOM元素过多',
+      helpText: '浏览器工程师建议页面包含少于〜$ {Util.formatNumber（DOMSize.MAX_DOM_NODES）} 的DOM节点.' +
+      '最佳位置是树的深度<$ {MAX_DOM_TREE_DEPTH}个元素，小于$ {MAX_DOM_TREE_WIDTH}个子元素/父元素.' +
+      '大的DOM会增加内存使用，导致更长的[样式计算]（https://developers.google.com/web/fundamentals/performance/rendering/reduce-the-scope-and-complexity-of-style-calculations）,' +
+      ' 并产生昂贵的[布局重排]（https://developers.google.com/speed/articles/reflow）。[了解更多](https://developers.google.com/web/fundamentals/performance/rendering/).',
       scoringMode: Audit.SCORING_MODES.NUMERIC,
       requiredArtifacts: ['DOMStats'],
     };

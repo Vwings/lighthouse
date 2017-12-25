@@ -21,11 +21,10 @@ class UsesWebPImages extends ByteEfficiencyAudit {
   static get meta() {
     return {
       name: 'uses-webp-images',
-      description: 'Serve images as WebP',
+      description: '提供WebP格式的图像',
       informative: true,
-      helpText: 'WebP provides better lossy and lossless compression than PNG or JPEG, ' +
-        'which means faster downloads and less data consumption. ' +
-        '[Learn more](https://developers.google.com/web/tools/lighthouse/audits/webp).',
+      helpText: 'WebP提供比PNG或JPEG更好的有损和无损压缩，这意味着更快的下载和更少的数据消耗. ' +
+      '[了解更多](https://developers.google.com/web/tools/lighthouse/audits/webp).',
       requiredArtifacts: ['OptimizedImages', 'devtoolsLogs'],
     };
   }

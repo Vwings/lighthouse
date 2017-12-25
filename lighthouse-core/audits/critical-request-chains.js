@@ -15,13 +15,10 @@ class CriticalRequestChains extends Audit {
   static get meta() {
     return {
       name: 'critical-request-chains',
-      description: 'Critical Request Chains',
+      description: '关键请求链',
       informative: true,
-      helpText: 'The Critical Request Chains below show you what resources are ' +
-          'required for first render of this page. Improve page load by reducing ' +
-          'the length of chains, reducing the download size of resources, or ' +
-          'deferring the download of unnecessary resources. ' +
-          '[Learn more](https://developers.google.com/web/tools/lighthouse/audits/critical-request-chains).',
+      helpText: '下面的关键请求链展示了此页面的第一次渲染所需要的资源。通过减少链的长度，减少资源的下载大小，或推迟不必要的资源的下载来改善页面加载.' +
+      ' [了解更多](https://developers.google.com/web/tools/lighthouse/audits/critical-request-chains).',
       requiredArtifacts: ['devtoolsLogs'],
     };
   }
