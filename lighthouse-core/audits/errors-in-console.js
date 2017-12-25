@@ -19,10 +19,10 @@ class ErrorLogs extends Audit {
   static get meta() {
     return {
       name: 'errors-in-console',
-      description: 'No browser errors logged to the console',
-      helpText: 'Errors logged to the console indicate unresolved problems. ' +
-        'They can come from network request failures and other browser concerns.',
-      failureDescription: 'Browser errors were logged to the console',
+      description: '没有浏览器错误记录到控制台',
+      helpText: '记录到控制台的错误表示未解决的问题。' +
+        '它们可能来自于网络请求的失败和其他的浏览器问题。',
+      failureDescription: '浏览器错误被记录到控制台',
       requiredArtifacts: ['ChromeConsoleMessages', 'RuntimeExceptions'],
     };
   }

@@ -21,10 +21,10 @@ class Deprecations extends Audit {
   static get meta() {
     return {
       name: 'deprecations',
-      description: 'Avoids deprecated APIs',
-      failureDescription: 'Uses deprecated API\'s',
-      helpText: 'Deprecated APIs will eventually be removed from the browser. ' +
-          '[Learn more](https://www.chromestatus.com/features#deprecated).',
+      description: '避免弃用的APIs',
+      failureDescription: '使用弃用的APIs',
+      helpText: '弃用的APIs最终将从浏览器中删除。' +
+          '[了解更多](https://www.chromestatus.com/features#deprecated).',
       requiredArtifacts: ['ChromeConsoleMessages'],
     };
   }

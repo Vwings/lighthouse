@@ -19,11 +19,10 @@ class NoDocWriteAudit extends ViolationAudit {
   static get meta() {
     return {
       name: 'no-document-write',
-      description: 'Avoids `document.write()`',
-      failureDescription: 'Uses `document.write()`',
-      helpText: 'For users on slow connections, external scripts dynamically injected via ' +
-          '`document.write()` can delay page load by tens of seconds. ' +
-          '[Learn more](https://developers.google.com/web/tools/lighthouse/audits/document-write).',
+      description: '避免 `document.write()`',
+      failureDescription: '使用 `document.write()`',
+      helpText: '对于连接速度慢的用户，通过`document.write（）`动态注入的外部脚本可以延迟页面加载数十秒。' +
+          '[了解更多](https://developers.google.com/web/tools/lighthouse/audits/document-write).',
       requiredArtifacts: ['ChromeConsoleMessages'],
     };
   }

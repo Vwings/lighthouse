@@ -22,10 +22,10 @@ class UsesHTTP2Audit extends Audit {
   static get meta() {
     return {
       name: 'uses-http2',
-      description: 'Uses HTTP/2 for its own resources',
-      failureDescription: 'Does not use HTTP/2 for all of its resources',
-      helpText: 'HTTP/2 offers many benefits over HTTP/1.1, including binary headers, ' +
-          'multiplexing, and server push. [Learn more](https://developers.google.com/web/tools/lighthouse/audits/http2).',
+      description: '使用 HTTP/2 传输自身资源',
+      failureDescription: '勿使用HTTP/2传输全部自身资源',
+      helpText: '同HTTP/1.1相比，HTTP/2提供了许多优势，包括二进制头文件、多路复用和服务器推送。' +
+          '[了解更多](https://developers.google.com/web/tools/lighthouse/audits/http2).',
       requiredArtifacts: ['URL', 'devtoolsLogs'],
     };
   }

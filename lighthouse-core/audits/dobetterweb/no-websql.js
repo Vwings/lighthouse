@@ -20,10 +20,10 @@ class NoWebSQLAudit extends Audit {
   static get meta() {
     return {
       name: 'no-websql',
-      description: 'Avoids WebSQL DB',
-      failureDescription: 'Uses WebSQL DB',
-      helpText: 'Web SQL is deprecated. Consider using IndexedDB instead. ' +
-          '[Learn more](https://developers.google.com/web/tools/lighthouse/audits/web-sql).',
+      description: '避免WebSQL DB',
+      failureDescription: '使用WebSQL DB',
+      helpText: 'Web SQL已被弃用。 考虑使用IndexedDB。' +
+          '[了解更多](https://developers.google.com/web/tools/lighthouse/audits/web-sql).',
       requiredArtifacts: ['WebSQL'],
     };
   }

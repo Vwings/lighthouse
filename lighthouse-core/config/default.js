@@ -171,58 +171,56 @@ module.exports = {
 
   groups: {
     'perf-metric': {
-      title: 'Metrics',
-      description: 'These metrics encapsulate your app\'s performance across a number of dimensions.',
+      title: '指标',
+      description: '这些指标从多个方面总结您的应用程序的性能。',
     },
     'perf-hint': {
-      title: 'Opportunities',
-      description: 'These are opportunities to speed up your application by optimizing the following resources.',
+      title: '机会',
+      description: '这些是通过优化以下资源来加速应用程序的机会。',
     },
     'perf-info': {
-      title: 'Diagnostics',
-      description: 'More information about the performance of your application.',
+      title: '诊断',
+      description: '更多关于您应用程序的性能信息。',
     },
     'a11y-color-contrast': {
-      title: 'Color Contrast Is Satisfactory',
-      description: 'These are opportunities to improve the legibility of your content.',
+      title: '色彩对比度即满意度',
+      description: '这些是提高您内容可读性的机会。',
     },
     'a11y-describe-contents': {
-      title: 'Elements Describe Contents Well',
-      description: 'These are opportunities to make your content easier to understand for a user of assistive technology, like a screen reader.',
+      title: '元素准确描述内容',
+      description: '这些是可以帮助使用如屏幕阅读器等辅助技术的用户理解您的内容的机会。',
     },
     'a11y-well-structured': {
-      title: 'Elements Are Well Structured',
-      description: 'These are opportunities to make sure your HTML is appropriately structured.',
+      title: '元素结构良好',
+      description: '这些是确保您HTML结构适当的机会。',
     },
     'a11y-aria': {
-      title: 'ARIA Attributes Follow Best Practices',
-      description: 'These are opportunities to improve the usage of ARIA in your application which may enhance the experience for users of assistive technology, like a screen reader.',
+      title: 'ARIA属性遵循最佳方案',
+      description: '这些是在您的应用程序中改进ARIA的机会，可以提高使用如屏幕阅读器等辅助技术用户的体验。',
     },
     'a11y-correct-attributes': {
-      title: 'Elements Use Attributes Correctly',
-      description: 'These are opportunities to improve the configuration of your HTML elements.',
+      title: '元素属性的正确使用',
+      description: '这些是改进您HTML元素配置的机会',
     },
     'a11y-element-names': {
-      title: 'Elements Have Discernable Names',
-      description: 'These are opportunities to improve the semantics of the controls in your application. This may enhance the experience for users of assistive technology, like a screen reader.',
+      title: '元素具有有辨别力的名称',
+      description: '这些是改进您应用程序中控件名称的机会。这可能会增强使用如屏幕阅读器等辅助技术用户的体验。',
     },
     'a11y-language': {
-      title: 'Page Specifies Valid Language',
-      description: 'These are opportunities to improve the interpretation of your content by users in different locales.',
+      title: '页面指定有效语言',
+      description: '这些是可以增强不同地区的用户对您的内容的理解的机会。',
     },
     'a11y-meta': {
-      title: 'Meta Tags Used Properly',
-      description: 'These are opportunities to improve the user experience of your site.',
+      title: '正确使用Meta标签',
+      description: '这些都是改善您网站用户体验的机会',
     },
     'manual-a11y-checks': {
-      title: 'Additional items to manually check',
-      description: 'These items address areas which an automated testing tool cannot cover. Learn more in our guide on [conducting an accessibility review](https://developers.google.com/web/fundamentals/accessibility/how-to-review).',
+      title: '需手动检查的额外项目',
+      description: '这些项目意在解决自动测试工具无法覆盖的区域。请至我们的指南了解更多(https://developers.google.com/web/fundamentals/accessibility/how-to-review).',
     },
     'manual-pwa-checks': {
-      title: 'Manual checks to verify',
-      description: 'These checks are required by the baseline ' +
-          '[PWA Checklist](https://developers.google.com/web/progressive-web-apps/checklist) but are ' +
-          'not automatically checked by Lighthouse. They do not affect your score but it\'s important that you verify them manually.',
+      title: '验证所需要的手动检查',
+      description: '这些检查不会由Lighthouse自动完成，但是基准中注明需要的。它们不影响你的分数，但您手动验证它们很重要。',
     },
   },
   categories: {
@@ -248,8 +246,8 @@ module.exports = {
       ],
     },
     'performance': {
-      name: 'Performance',
-      description: 'These encapsulate your app\'s current performance and opportunities to improve it.',
+      name: '性能',
+      description: '这些概括了你的应用目前的性能情况和可能的提升机会。',
       audits: [
         {id: 'first-meaningful-paint', weight: 5, group: 'perf-metric'},
         {id: 'first-interactive', weight: 5, group: 'perf-metric'},
@@ -327,8 +325,8 @@ module.exports = {
       ],
     },
     'best-practices': {
-      name: 'Best Practices',
-      description: 'We\'ve compiled some recommendations for modernizing your web app and avoiding performance pitfalls.',
+      name: '最佳方案',
+      description: '我们总结了一些关于更新您的Web应用程序并避免性能问题的建议。',
       audits: [
         {id: 'appcache-manifest', weight: 1},
         {id: 'no-websql', weight: 1},

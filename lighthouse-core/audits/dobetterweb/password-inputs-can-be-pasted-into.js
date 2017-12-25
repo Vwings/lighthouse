@@ -14,10 +14,10 @@ class PasswordInputsCanBePastedIntoAudit extends Audit {
   static get meta() {
     return {
       name: 'password-inputs-can-be-pasted-into',
-      description: 'Allows users to paste into password fields',
-      failureDescription: 'Prevents users to paste into password fields',
-      helpText: 'Preventing password pasting undermines good security policy. ' +
-          '[Learn more](https://www.ncsc.gov.uk/blog-post/let-them-paste-passwords)',
+      description: '允许用户粘贴到密码字段',
+      failureDescription: '防止用户粘贴到密码字段',
+      helpText: '防止密码粘贴削弱了良好的安全策略。' +
+          '[了解更多](https://www.ncsc.gov.uk/blog-post/let-them-paste-passwords)',
       requiredArtifacts: ['PasswordInputsWithPreventedPaste'],
     };
   }

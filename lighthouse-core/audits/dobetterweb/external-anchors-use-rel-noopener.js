@@ -15,11 +15,10 @@ class ExternalAnchorsUseRelNoopenerAudit extends Audit {
   static get meta() {
     return {
       name: 'external-anchors-use-rel-noopener',
-      description: 'Opens external anchors using `rel="noopener"`',
-      failureDescription: 'Does not open external anchors using `rel="noopener"`',
-      helpText: 'Open new tabs using `rel="noopener"` to improve performance and ' +
-          'prevent security vulnerabilities. ' +
-          '[Learn more](https://developers.google.com/web/tools/lighthouse/audits/noopener).',
+      description: '使用`rel =“noopener”`打开外部锚点',
+      failureDescription: '不要使用`rel =“noopener”`打开外部锚点',
+      helpText: '使用`rel =“noopener”`打开新的选项卡来提高性能并防止安全漏洞。' +
+          '[了解更多](https://developers.google.com/web/tools/lighthouse/audits/noopener).',
       requiredArtifacts: ['URL', 'AnchorsWithNoRelNoopener'],
     };
   }
