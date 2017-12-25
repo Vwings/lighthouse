@@ -1,6 +1,6 @@
 {
-  "name": "brs_lighthouse",
-  "version": "1.0.2",
+  "name": "brs-lighthouse",
+  "version": "1.0.0",
   "description": "Lighthouse",
   "main": "./lighthouse-core/index.js",
   "bin": {
