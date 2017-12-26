@@ -1,5 +1,5 @@
 {
-  "name": "brs-lighthouse",
+  "name": "tybrs-lighthouse",
   "version": "1.0.0",
   "description": "Lighthouse",
   "main": "./lighthouse-core/index.js",
